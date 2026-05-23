@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="home">
-      Comming soon
+      soon
     </div>
   )
 }
