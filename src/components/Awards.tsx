@@ -30,7 +30,7 @@ const awards_sport = [
   {
     title: 'Kickboxing World Cup -Austrian Classics',
     year: '2020',
-    description: '1st Place and winner of the World Cup',
+    description: '1st Place and winner of the World Cup in the Juniors Category',
   },
   {
     title: 'Multiple National and International Champion -Ashihara Karate',
