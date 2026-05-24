@@ -1,4 +1,3 @@
-
 import './App.css'
 
 function App() {
@@ -14,12 +13,21 @@ function App() {
         />
       </div>
     )
-  } 
+  }
 
   return (
-    <div className="home">
-      soon
-    </div>
+    <main className="page">
+      <nav className="navbar">
+        <h2>Eriko Nitu</h2>
+
+        <div className="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#awards">Awards</a>
+          <a href="/CV">CV</a>
+        </div>
+      </nav>
+      
+    </main>
   )
 }
 
