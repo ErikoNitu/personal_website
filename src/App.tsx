@@ -1,4 +1,5 @@
 import './App.css'
+import Description from './components/Description'
 
 function App() {
   const path = window.location.pathname
@@ -26,6 +27,8 @@ function App() {
           <a href="/CV">CV</a>
         </div>
       </nav>
+
+      <Description />
       
     </main>
   )
