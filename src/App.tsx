@@ -1,6 +1,7 @@
 import './App.css'
 import Description from './components/Description'
 import Projects from './components/Projects'
+import Awards from './components/Awards'
 
 function App() {
   const path = window.location.pathname
@@ -20,7 +21,7 @@ function App() {
   return (
     <main className="page">
       <nav className="navbar">
-        <h2>Eriko Nitu</h2>
+        <h2>ERIKO</h2>
 
         <div className="nav-links">
           <a href="#projects">Projects</a>
@@ -32,6 +33,8 @@ function App() {
       <Description />
 
       <Projects />
+
+      <Awards />
       
     </main>
   )

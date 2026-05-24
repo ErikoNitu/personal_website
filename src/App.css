@@ -248,23 +248,35 @@ a {
 }
 
 .awards-window {
-  overflow: hidden;
-  border-radius: 24px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+  border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.02);
+  padding: 16px 12px 20px;
+}
+
+.awards-title {
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 12px;
+  color: #bdbdbd;
+  font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
 }
 
 .awards-track {
   display: flex;
-  gap: 20px;
-  padding: 18px;
+  gap: 1.5rem;
   width: max-content;
-  animation: awards-scroll 20s linear infinite;
 }
 
 .award-card {
-  min-width: 240px;
-  max-width: 240px;
+  min-width: 280px;
+  max-width: 280px;
+  flex-shrink: 0;
   padding: 18px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.04);
