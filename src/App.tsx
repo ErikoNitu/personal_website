@@ -21,12 +21,14 @@ function App() {
   return (
     <main className="page">
       <nav className="navbar">
-        <h2>ERIKO</h2>
+        <div className="navbar-inner">
+          <h2>ERIKO</h2>
 
-        <div className="nav-links">
-          <a href="#projects">Projects</a>
-          <a href="#awards">Awards</a>
-          <a href="/CV">CV</a>
+          <div className="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#awards">Awards</a>
+            <a href="/CV">CV</a>
+          </div>
         </div>
       </nav>
 

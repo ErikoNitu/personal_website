@@ -7,10 +7,10 @@ const awards = [
   {
     title: 'HackITAll SAP Challenge',
     year: '2025',
-    description: 'Awarded Mention after builing a system to optimize rotable kit logistics in a hub-and-spoke network',
+    description: 'Awarded Mention after building a system to optimize rotable kit logistics in a hub-and-spoke network',
   },
   {
-    title: 'NXP Autonomous Course',
+    title: 'NXP Autonomous Cars Course',
     year: '2025',
     description: '3rd Place in the final competition. Built an NXP Cup car from scratch.',
   },
