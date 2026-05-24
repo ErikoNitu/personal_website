@@ -34,7 +34,7 @@ function Projects() {
         {repos
           .filter((repo) => !repo.fork)
           .filter((_, index) => index === 0 || index > 2)
-          .slice(0, 7)
+          .slice(1, 8)
           .map((repo) => (
           <a
             href={repo.html_url}
