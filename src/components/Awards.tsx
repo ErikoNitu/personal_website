@@ -23,22 +23,22 @@ const awards_cs = [
 
 const awards_sport = [
   {
-    title: 'Ashihara Karate World Championship Japan Matsuyama',
+    title: 'Ashihara Karate World Championship -Japan Matsuyama',
     year: '2024',
     description: '1st Place in the Seniors Category 18-42 years, -70kg',
   },
   {
-    title: 'Kickboxing World Cup Austrian Classics',
+    title: 'Kickboxing World Cup -Austrian Classics',
     year: '2020',
     description: '1st Place and winner of the World Cup',
   },
   {
-    title: 'Multiple National and International Champion Ashihara Karate',
+    title: 'Multiple National and International Champion -Ashihara Karate',
     year: '2014-2026',
     description: 'Won a total of 31 medals among which 18 gold medals',
   },
   {
-    title: 'Multiple National and International Champion Kickboxing',
+    title: 'Multiple National and International Champion -Kickboxing',
     year: '2019-2026',
     description: 'Won a total of 62 medals among which 35 gold medals and 2 belts',
   },
@@ -46,6 +46,11 @@ const awards_sport = [
     title: 'Ashihara Karate Black Belt',
     year: '2023',
     description: 'After practicing Karate for 10 years and going through 11 belt exams',
+  },
+  {
+    title: 'Athlete of the Year 2024 - Ashihara Karate',
+    year: '2024',
+    description: 'Awarded after winning the world championship',
   },
 ]
 
