@@ -1,5 +1,6 @@
 import './App.css'
 import Description from './components/Description'
+import Projects from './components/Projects'
 
 function App() {
   const path = window.location.pathname
@@ -29,6 +30,8 @@ function App() {
       </nav>
 
       <Description />
+
+      <Projects />
       
     </main>
   )

@@ -28,7 +28,7 @@ function Description() {
       </div>
 
       <div className="profile-photo">
-        <img src="../public/image.jpg" alt="Profile" className="photo" />
+        <img src="/image.jpg" alt="Profile" className="photo" />
       </div>
     </section>
   )
