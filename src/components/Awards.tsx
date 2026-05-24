@@ -45,12 +45,12 @@ const awards_sport = [
    {
     title: 'Ashihara Karate Black Belt',
     year: '2023',
-    description: 'After practicing Karate for 10 years and going through 11 belt exams',
+    description: 'Earned after practicing Karate for 12 years and going through 11 belt exams',
   },
   {
     title: 'Athlete of the Year 2024 - Ashihara Karate',
     year: '2024',
-    description: 'Awarded after winning the world championship',
+    description: 'Awarded after winning the World Championship',
   },
 ]
 
