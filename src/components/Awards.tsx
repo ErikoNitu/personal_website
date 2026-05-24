@@ -1,4 +1,4 @@
-const awards = [
+const awards_cs = [
   {
     title: 'HackITAll Amazon Games Challenge',
     year: '2025',
@@ -21,17 +21,63 @@ const awards = [
   },
 ]
 
+const awards_sport = [
+  {
+    title: 'Ashihara Karate World Championship Japan Matsuyama',
+    year: '2024',
+    description: '1st Place in the Seniors Category 18-42 years, -70kg',
+  },
+  {
+    title: 'Kickboxing World Cup Austrian Classics',
+    year: '2020',
+    description: '1st Place and winner of the World Cup',
+  },
+  {
+    title: 'Multiple National and International Champion Ashihara Karate',
+    year: '2014-2026',
+    description: 'Won a total of 31 medals among which 18 gold medals',
+  },
+  {
+    title: 'Multiple National and International Champion Kickboxing',
+    year: '2019-2026',
+    description: 'Won a total of 62 medals among which 35 gold medals and 2 belts',
+  },
+   {
+    title: 'Ashihara Karate Black Belt',
+    year: '2023',
+    description: 'After practicing Karate for 10 years and going through 11 belt exams',
+  },
+]
+
 function Awards() {
   return (
     <section id="awards" className="section">
         <div className="awards-header">
           <p className="awards-title">Achievements</p>
-          <h2>Awards & Highlights</h2>
+            <br></br>
+          <h3>CSE Awards & Highlights</h3>
         </div>
 
         <div className="awards-window">
           <div className="awards-track">
-            {awards.map((award, index) => (
+            {awards_cs.map((award, index) => (
+              <article className="award-card" key={`${award.title}-${index}`}>
+                <span>{award.year}</span>
+                <h3>{award.title}</h3>
+                <p>{award.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <br></br>
+        <div className="awards-header">
+          <h3>Sports Awards & Highlights</h3>
+          
+        </div>
+        <div className="awards-window">
+          <div className="awards-track">
+            {awards_sport.map((award, index) => (
               <article className="award-card" key={`${award.title}-${index}`}>
                 <span>{award.year}</span>
                 <h3>{award.title}</h3>
