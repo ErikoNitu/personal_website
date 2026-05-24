@@ -8,11 +8,11 @@ function Description() {
         <h1>Eriko Nitu</h1>
 
         <p>
-          I am a Computer Engineering student, programmer, professional athlete and 
-          Ashihara Karate World Champion. I am passionate about technology, innovation 
-          and building meaningful projects, especially through hackathons, teamwork and 
-          software development. Also currently I am a karate trainer, bringing discipline, 
-          leadership, focus and a competitive mindset into everything I do, both in sports 
+          Computer engineering student, professional athlete and driven programmer fueled by 
+          technology and innovation, with a sharp eye for details and a passion for building great projects.
+          I have always been actively involved in the programming field, enriching my knowledge with every 
+          oportunity that comes my way. Also I am an Ashihara Karate World Champion and currently a karate trainer,
+          bringing discipline, leadership, focus and a competitive mindset into everything I do, both in sports 
           and in engineering.
         </p>
 
