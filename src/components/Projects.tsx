@@ -33,7 +33,8 @@ function Projects() {
       <div className="projects-grid">
         {repos
           .filter((repo) => !repo.fork)
-          .slice(2, 9)
+          .filter((_, index) => index === 0 || index > 2)
+          .slice(0, 7)
           .map((repo) => (
           <a
             href={repo.html_url}
