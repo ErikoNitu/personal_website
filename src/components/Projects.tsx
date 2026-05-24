@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 const GITHUB_USERNAME = 'ErikoNitu'
+const hiddenRepos = ['personal_website', 'ErikoNitu', 'test-repo']
 
 function Projects() {
   const [repos, setRepos] = useState<any[]>([])
@@ -33,8 +34,8 @@ function Projects() {
       <div className="projects-grid">
         {repos
           .filter((repo) => !repo.fork)
-          .filter((_, index) => index === 0 || index > 2)
-          .slice(1, 8)
+          .filter((repo) => !hiddenRepos.includes(repo.name))
+          .slice(0, 9)
           .map((repo) => (
           <a
             href={repo.html_url}
