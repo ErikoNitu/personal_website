@@ -307,6 +307,110 @@ a {
   font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
 }
 
+.certificates-section {
+  overflow: hidden;
+}
+
+.certificates-carousel {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.certificates-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scrollCertificates 25s linear infinite;
+}
+
+.certificates-carousel:hover .certificates-track {
+  animation-play-state: paused;
+}
+
+.certificate-card {
+  position: relative;
+  width: 280px;
+  height: 190px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid #333;
+  cursor: pointer;
+  padding: 0;
+}
+
+.certificate-card:hover .certificate-image,
+.certificate-card.active .certificate-image {
+  transform: scale(1.05);
+  opacity: 0.45;
+}
+
+.certificate-card:hover .certificate-popup,
+.certificate-card.active .certificate-popup {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.certificate-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.certificate-card:hover .certificate-image {
+  transform: scale(1.05);
+  opacity: 0.45;
+}
+
+.certificate-popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+
+  opacity: 0;
+  transform: translate(-50%, -40%) scale(0.9);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.certificate-card:hover .certificate-popup {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.certificate-popup h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.certificate-popup p {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+@keyframes scrollCertificates {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .awards-track {
   display: flex;
   gap: 1.5rem;
@@ -324,6 +428,13 @@ a {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
 }
 
 .award-card span {
@@ -346,6 +457,15 @@ a {
 }
 
 @keyframes awards-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes certificates-scroll {
   0% {
     transform: translateX(0);
   }

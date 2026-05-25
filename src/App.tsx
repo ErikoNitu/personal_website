@@ -3,6 +3,7 @@ import Description from './components/Description'
 import Projects from './components/Projects'
 import Awards from './components/Awards'
 import CommitsHistory from './components/CommitsHistory'
+import Certificates from './components/Certificates'
 
 function App() {
   const path = window.location.pathname
@@ -31,6 +32,7 @@ function App() {
 
           <div className="nav-links">
             <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
             <a href="#awards">Awards</a>
             <a href="/CV">CV</a>
           </div>
@@ -40,6 +42,8 @@ function App() {
       <Description />
 
       <Projects />
+
+      <Certificates />
 
       <Awards />
              
