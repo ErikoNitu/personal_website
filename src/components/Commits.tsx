@@ -9,12 +9,10 @@ type CommitsProps = {
 function Commits({ repoName }: CommitsProps) {
   const [commits, setCommits] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
 
   useEffect(() => {
     const getCommits = async () => {
       setLoading(true);
-      setError("");
       setCommits([]);
 
       try {
@@ -23,14 +21,13 @@ function Commits({ repoName }: CommitsProps) {
         );
 
         if (!response.ok) {
-          throw new Error("Could not fetch commits");
+          return;
         }
 
         const data = await response.json();
         setCommits(data);
       } catch (error) {
         console.error(error);
-        setError("Could not load commits for this repository.");
       } finally {
         setLoading(false);
       }
@@ -41,10 +38,6 @@ function Commits({ repoName }: CommitsProps) {
 
   if (loading) {
     return <p>Loading commits...</p>;
-  }
-
-  if (error) {
-    return <p>{error}</p>;
   }
 
   return (
