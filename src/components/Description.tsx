@@ -11,7 +11,7 @@ function Description() {
           Computer engineering student, professional athlete and driven programmer fueled by 
           technology and innovation, with a sharp eye for details and a passion for building great projects.
           I have always been actively involved in the programming field, enriching my knowledge with every 
-          oportunity that comes my way. Also I am a Ashihara Karate World Champion and currently a karate trainer,
+          oportunity that comes my way. I am also a Ashihara Karate World Champion and currently a karate trainer,
           bringing discipline, leadership, focus and a competitive mindset into everything I do, both in sports 
           and in engineering.
         </p>
