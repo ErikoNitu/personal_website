@@ -24,6 +24,16 @@ function App() {
      return <CommitsHistory />
   }
 
+  if (path === '/secret') {
+    return (
+      <main className="secret-page">
+        <a href="https://erikonitu.github.io/CatchTheImpostor/" className="secret-link">
+          Click here
+        </a>
+      </main>
+    )
+  }
+
   return (
     <main className="page">
       <nav className="navbar">
