@@ -15,22 +15,22 @@ function Commits({ repoName }: CommitsProps) {
       setLoading(true);
       setCommits([]);
 
-      try {
-        const response = await fetch(
-          `https://api.github.com/repos/${GITHUB_USERNAME}/${repoName}/commits?per_page=5`
-        );
+    const githubUsername =
+      repoName === "DraWar" ? "OctaVianu8" : GITHUB_USERNAME;
+      
+    const response = await fetch(
+      `https://api.github.com/repos/${githubUsername}/${repoName}/commits?per_page=5`
+    );
 
-        if (!response.ok) {
-          return;
-        }
+    if (!response.ok) {
+      return;
+    }
 
-        const data = await response.json();
-        setCommits(data);
-      } catch (error) {
-        console.error(error);
-      } finally {
-        setLoading(false);
-      }
+    const data = await response.json();
+    setCommits(data);
+      
+    setLoading(false);
+      
     };
 
     getCommits();

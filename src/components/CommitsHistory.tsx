@@ -25,16 +25,21 @@ function CommitsHistory() {
 
   useEffect(() => {
     const getRepos = async () => {
-      const response = await fetch(
-        `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=20`
-      );
+      const [userReposResponse, draWarResponse] = await Promise.all([
+        fetch(
+          `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=9`
+        ),
+        fetch('https://api.github.com/repos/OctaVianu8/DraWar'),
+      ])
 
-      if (!response.ok) {
-        return;
+      if (!userReposResponse.ok || !draWarResponse.ok) {
+        return
       }
 
-      const data = await response.json();
-      setRepos(data);
+      const userRepos = await userReposResponse.json()
+      const draWarRepo = await draWarResponse.json()
+
+      setRepos([...userRepos, draWarRepo])
     };
 
     getRepos();
