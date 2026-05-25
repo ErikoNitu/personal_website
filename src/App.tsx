@@ -2,6 +2,7 @@ import './App.css'
 import Description from './components/Description'
 import Projects from './components/Projects'
 import Awards from './components/Awards'
+import CommitsHistory from './components/CommitsHistory'
 
 function App() {
   const path = window.location.pathname
@@ -16,6 +17,10 @@ function App() {
         />
       </div>
     )
+  }
+
+  if (path === '/commits') {
+     return <CommitsHistory />
   }
 
   return (
@@ -37,7 +42,7 @@ function App() {
       <Projects />
 
       <Awards />
-      
+             
     </main>
   )
 }

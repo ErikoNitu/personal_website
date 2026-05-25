@@ -1,24 +1,28 @@
 import { useEffect, useState } from 'react'
 
 const GITHUB_USERNAME = 'ErikoNitu'
-const hiddenRepos = ['personal_website', 'ErikoNitu', 'test-repo']
+const hiddenRepos = ['personal_website', 'ErikoNitu', 'test-repo', '']
 
 function Projects() {
   const [repos, setRepos] = useState<any[]>([])
 
   useEffect(() => {
     const getRepos = async () => {
-      const response = await fetch(
-        `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=9`
-      )
+      const [userReposResponse, draWarResponse] = await Promise.all([
+        fetch(
+          `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=9`
+        ),
+        fetch('https://api.github.com/repos/OctaVianu8/DraWar'),
+      ])
 
-      if (!response.ok) {
+      if (!userReposResponse.ok || !draWarResponse.ok) {
         return
       }
 
-      const data = await response.json()
+      const userRepos = await userReposResponse.json()
+      const draWarRepo = await draWarResponse.json()
 
-      setRepos(data)
+      setRepos([...userRepos, draWarRepo])
     }
 
     getRepos()
@@ -28,7 +32,12 @@ function Projects() {
     <section id="projects" className="section">
       <div className="projects-header">
         <p className="projects-title">GitHub API</p>
-        <h2>Projects</h2>
+        <div className="projects-title-row">
+          <h2>Projects</h2>
+          <a href="/commits" className="commits-button">
+            View commits history
+          </a>
+        </div>
       </div>
 
       <div className="projects-grid">
