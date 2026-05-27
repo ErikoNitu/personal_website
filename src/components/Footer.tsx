@@ -10,7 +10,7 @@ const ICONS = {
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer id = "contact" className="footer">
         <p>Contact</p>
 
         <div className="footer-links">
@@ -49,6 +49,9 @@ function Footer() {
           Github
           </a>
         </div>
+        <p className="footer-copy">
+          &copy; 2026 Eriko Nitu
+        </p>
     </footer>
   )
 }

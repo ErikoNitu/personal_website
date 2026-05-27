@@ -56,6 +56,7 @@ function CommitsHistory() {
             <a href="/">Home</a>
             <a href="/#projects">Projects</a>
             <a href="/#awards">Awards</a>
+            <a href="#contact">Contact</a>
             <a href="/CV">CV</a>
           </div>
         </div>

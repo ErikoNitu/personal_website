@@ -45,6 +45,7 @@ function App() {
             <a href="#projects">Projects</a>
             <a href="#certificates">Certificates</a>
             <a href="#awards">Awards</a>
+            <a href="#contact">Contact</a>
             <a href="/CV">CV</a>
           </div>
         </div>

@@ -683,3 +683,9 @@ a {
     margin-top: 80px;
   }
 }
+
+.footer-copy {
+  margin-top: 24px;
+  font-size: 14px;
+  opacity: 0.6;
+}
