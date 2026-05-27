@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navbar">
         <div className="navbar-inner">
-            <h2>ERIKO</h2>
+            <h2><a href="/">ERIKO</a></h2>
 
             <button
                 className="nav-toggle"
