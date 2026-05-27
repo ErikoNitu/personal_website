@@ -4,6 +4,7 @@ import Projects from './components/Projects'
 import Awards from './components/Awards'
 import CommitsHistory from './components/CommitsHistory'
 import Certificates from './components/Certificates'
+import Footer from './components/Footer'
 
 function App() {
   const path = window.location.pathname
@@ -56,6 +57,8 @@ function App() {
       <Certificates />
 
       <Awards />
+
+      <Footer />
              
     </main>
   )

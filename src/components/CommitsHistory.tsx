@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Commits from "./Commits";
+import Footer from "./Footer"
 
 const GITHUB_USERNAME = "ErikoNitu";
 
@@ -82,7 +83,9 @@ function CommitsHistory() {
 
         {selectedRepo && <Commits repoName={selectedRepo} />}
       </section>
-    </main>
+
+      <Footer />
+    </main> 
   );
 }
 
