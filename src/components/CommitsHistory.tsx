@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Commits from "./Commits";
-import Footer from "./Footer"
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 const GITHUB_USERNAME = "ErikoNitu";
 
@@ -48,19 +49,8 @@ function CommitsHistory() {
 
   return (
     <main className="commits-page">
-      <nav className="navbar">
-        <div className="navbar-inner">
-          <h2>ERIKO</h2>
-
-          <div className="nav-links">
-            <a href="/">Home</a>
-            <a href="/#projects">Projects</a>
-            <a href="/#awards">Awards</a>
-            <a href="#contact">Contact</a>
-            <a href="/CV">CV</a>
-          </div>
-        </div>
-      </nav>
+      
+      <Navbar />
 
       <section className="section commits-history-section">
         <div className="projects-header">

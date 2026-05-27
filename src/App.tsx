@@ -5,6 +5,7 @@ import Awards from './components/Awards'
 import CommitsHistory from './components/CommitsHistory'
 import Certificates from './components/Certificates'
 import Footer from './components/Footer'
+import Navbar from './components/Navbar'
 
 function App() {
   const path = window.location.pathname
@@ -37,19 +38,8 @@ function App() {
 
   return (
     <main className="page">
-      <nav className="navbar">
-        <div className="navbar-inner">
-          <h2>ERIKO</h2>
-
-          <div className="nav-links">
-            <a href="#projects">Projects</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#awards">Awards</a>
-            <a href="#contact">Contact</a>
-            <a href="/CV">CV</a>
-          </div>
-        </div>
-      </nav>
+      
+      <Navbar />
 
       <Description />
 
